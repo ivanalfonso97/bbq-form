@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ===============
+Typography
+=============== */
+
+body {
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+    color: #5A5A5A;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 2.25rem;
+    max-width: 300px;
+    margin: 2em 0.5em;
+    color: #FFFFFF;
+}
+
+h1 span {
+    font-weight: 900;
+}
+
+.subtitle,
+.top-text,
+.register {
+    color: #F18119;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 1.5em;
+}
+
+.top-text {
+    font-size: 0.625rem;
+    border-top: 7px solid currentColor;
+    border-image: linear-gradient(to left, #FF713B, #FFA51D) 1;
+    padding-top: 0.3em;
+    order: -1;
+}
+
+.form-title {
+    font-size: 1.25rem;
+    margin-top: 1.5em;
+    color: #404040;
+}
+
+input {
+    color: #404040;
+    text-transform: lowercase;
+    text-align: center;
+    opacity: 0.5;
+}
+
+button {
+    color: #FFFFFF;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    font-size: 0.625rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.fine-print {
+    color: #989898;
+    font-size: 0.625rem;
+    width: 100px;
+    letter-spacing: 0.5px;
+}
+
+/* ===============
+Layout
+=============== */
+
+.intro,
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.intro {
+    background-image: url(Assets/dark-ribs.jpg);
+    background-color: #404040;
+    background-size: cover;
+    background-position: center;
+}
+
+.register {
+    margin-bottom: 1.5em;
+}
+
+.main-content p {
+    width: 90%;
+    max-width: 500px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+input,
+button {
+    width: 90%;
+    max-width: 253px;
+    height: 37px;
+}
+
+input {
+    margin-top: 1em;
+    border: 2px solid #818181;
+    border-radius: 7px;
+}
+
+button {
+    margin: 1em auto;
+    border-radius: 7px;
+    background: transparent linear-gradient(270deg, #FF713B 0%, #FFA51D 100%) 0% 0% no-repeat padding-box;
+    border: none;
+    /* transform: scale(1); */
+    /* transition: background-image 1s; */
+}
+
+button:hover,
+button:focus {
+    /* transform: scale(1.2); */
+    background: #404040;
+    cursor: pointer;
+}
+
+@media (min-width: 520px) { 
+    main {
+        display: flex;
+        min-height: 100vh;
+    }
+
+    .intro {
+        width: 60%;
+        justify-content: center;
+    }
+
+    .main-content {
+        width: 40%;
+        justify-content: center;
+    }
+
+    h1 {
+        margin: auto 0 0 0;
+    }
+
+    .subtitle {
+        margin: 0 0 auto 0;
+    }
+}
